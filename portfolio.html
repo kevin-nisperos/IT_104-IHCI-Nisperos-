@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        <title>www.Kevin website.com</title>
+    </head>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav__content">
+                    <div class="logo"><a href="#">KN</a></div>
+                    <input type="checkbox" id="check" class="checkbox">
+                    <label for="check" class="checkbox"><i class="fa-solid fa-bars"></i></label>
+                    <ul>
+                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                        <li><a href="blog.html"><i class="fa fa-pencil"></i> Blog</a></li>
+                        <li><a href="resume.html"><i class="fa fa-file-text-o"></i> Resume</a></li>
+                        <li><a href="services.html"><i class="fa fa-cogs"></i> Services</a></li>
+                        <li><a href="testimonials.html"><i class="fa-solid fa-comments-o"></i> Testimonials</a></li>
+                        <li><a href="faq.html"><i class="fa fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                    <a href="#" class="action_btn">Get Started</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="project">
+                <div class="project__container">
+                    <p class="section__subtitle">Portfolio</p>
+                    <h3 class="section__title"><span>Latest Projects</span></h3>
+                    <div class="project__grid">
+                        <div class="project__card">
+                            <img src="img4.png" alt="Project 1">
+                            <div class="project__description">
+                                <p>Project 1 is a responsive web design using modern HTML and CSS techniques.</p>
+                                <p>This project showcases a clean layout with a focus on usability.</p>
+                                <p>Technologies used include HTML5, CSS3, and JavaScript.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img src="img1.png" alt="Project 2">
+                            <div class="project__description">
+                                <p>Project 2 involves a dynamic web application built with React.</p>
+                                <p>It includes interactive components and state management.</p>
+                                <p>Technologies used include React, Redux, and CSS modules.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img src="img2.png" alt="Project 3">
+                            <div class="project__description">
+                                <p>Project 3 is a data visualization tool using D3.js.</p>
+                                <p>It provides insights through interactive charts and graphs.</p>
+                                <p>Technologies used include D3.js, SVG, and HTML5.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img src="img3.png" alt="Project 4">
+                            <div class="project__description">
+                                <p>Project 4 is an e-commerce platform with a custom backend.</p>
+                                <p>It supports user authentication and real-time updates.</p>
+                                <p>Technologies used include Node.js, Express, and MongoDB.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script>
+            const toggleBtn = document.querySelector('.checkbox')
+            const dropDownMenu = document.querySelector('nav ul')
+    
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+                toggleBtn.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            }
+        </script>
+         <footer class="footer">
+            <div class="footer__icons">
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-phone-fill"></i>
+            </div>
+            <div class="footer__contact">
+                <p>You can contact me on social media or by phone.</p>
+            </div>
+        </footer>
+    </body>
+</html>
